@@ -1,0 +1,26 @@
+AngularJS is such a cool tool to develop single page applications that can be requested from the server once and in return, the client gets an application package with some initial data and any additional requests made to the server will be only for data which is transmitted in JSON format. This makes AngularJS such a dynamic and lightweight alternative to many developers struggling to keep performace on their applications to the max! 
+
+I am currently starting to develop this sample app and hopefully by the end I learn tones of new things that AngularJS has to offer! Very excited!
+
+
+
+TEACHER'S NOTES:
+ANGULAR
+Fast
+Directives handling clicks, create content for each item in an array.
+
+DATA BINDING
+______________
+
+Used to describe the point where the application's data and its logic and variables come together.
+
+ONE WAY DATA BINDING
+______________________
+
+In many apps data binding takes place at a single point and then its up to the developer to keep all the data in sync. This can be very tedious if you have a lot of data and if you have a lot of user interaction.
+
+TWO WAY DATA BINDING
+______________________
+
+Angular data binding works differently. When Angular data is bound to the scope, Angular keeps the data in the scope continually up-to-date with the application underlying data store.
+Anytime the user interacts with the app, it updates the data in the scope of your application. And anytime the scope is updated, Angular has a process to update the unrelying data that is affected. 

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href='css/main.css' rel='stylesheet' type="text/css">
+</head>
+<body ng-app="todoListApp">
+<!--
+  <div hello-world></div>
+  <hello-world></hello-world>
+  <hello-world></hello-world>
+-->
+  <div ng-controller="mainCtrl" class="list">
+    <h1 ng-click="helloWorld()">My TODOs</h1>
+    <input ng-model="todo.completed" type="checkbox"/>
+    <label class="editing-lable" ng-click="helloWorld()">{{todo.name}}</label><!--we use the curly braces to tell angular to evaluate an expression-->
+    <input ng-model="todo.name" class="editing-lable" type="text"/><!--bind the value of this input to the object of the scope, in tn this case we will make the "todo" object-->
+    <!--Note that when starting to type on the A sample todo! input, the variable is initialized and everytime I make a change to the input the variable itself changes. This is Angular 2 way data binding-->
+    <!--prototypical inheritance-->
+    <div class="actions" ng-controller="coolCtrl">
+      <a href="" ng-click="whomAmI()">edit</a>
+      <a href="" ng-click="helloWorld()">save</a>
+      <a href="" class="delete">delete</a>
+    </div>
+  </div>
+  <div ng-controller="imASibling">
+    {{foobar}}<!--angular expression-->
+  </div>
+
+  
+  <script src="scripts/angular.js" type="text/javascript"></script>
+  <script src="scripts/app.js" type="text/javascript"></script>
+  <!--<script src="scripts/hello-world.js" type="text/javascript"></script>-->
+</body>
+</html>
